@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Budget Tracker System</h2>
+    <div class="container">
+        <div class="input-section">
+            <div class="add-budget">
+                <h3>Add Budget</h3>
+                <label for="">Budget:</label>
+                <input type="text" id="budget-amount"  />
+                <button onclick="addBudget()">Add Budget</button>
+            </div>
+            <div class="add-expense">
+                <h3>Add Expense</h3>
+                <label for="">Expense Title:</label>
+                <input type="text" id="expense-title"  />
+                <label for="">Amount:</label>
+                <input type="text" id="expense-amount"  />
+                <button onclick="addExpense()">Add Expense</button>
+            </div>
+             <button class="reset-btn" onclick="resetAll()">Reset All</button>
+        </div>
+        <div class="output-section">
+            <div class="budget-track">
+               <div class="budget-summary">
+                <div class="total-budget">Total Budget: <span id="total-budget">0.00</span></div>
+                <div  class="total-expenses">Total Expenses: <span id="total-expenses">0.00</span></div>
+                <div class="budget-left">Budget Left: <span id="budget-left">0.00</span></div>
+            </div>
+
+            <h3>Expense History : </h3>
+            <table>
+            <thead>
+                <tr>
+                    <th>Expense Name</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list">
+                <!-- <tr>
+                    <td>${title}</td>
+                    <td>${amount}</td>
+                    <td><button onclick="deleteExpense()">Remove</button></td>
+                </tr> -->
+            </tbody>
+            </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

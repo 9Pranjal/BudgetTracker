@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #bde0fe;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  background: #e7f5ff;
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #999999;
+  display: flex;
+  justify-content: space-between;
+}
+h2{
+    text-align: center;
+}
+h3{
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input{
+    margin: 5px 0 15px 0;
+    border: none;
+    padding: 3px;
+    width: 100%;
+    box-shadow: 0 0 10px #d3d3d3;
+}
+label{
+    font-size: 14px;
+}
+.add-budget , .add-expense ,.budget-track{
+  background: #e5f2fd;
+  max-width: 200px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+  margin-bottom: 30px;
+}
+.budget-track{
+    max-width: 100%;
+}
+.add-expense{
+margin-bottom: 0px;
+}
+button {
+  padding: 8px 12px;
+  margin-top: 5px;
+  width: 100%;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.reset-btn{
+   background-color: rgb(219, 1, 1); 
+   width: 260px;
+   margin-top: 20px;
+}
+.output-section{
+    margin-left: 30px;
+}
+.budget-summary{
+    display: flex;
+    justify-content: space-between;
+}
+.total-budget , .total-expenses ,.budget-left{
+  color: #0056b3;
+  font-weight: 600;
+  background: #bde0fe;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.remove-btn {
+  background-color: rgb(219, 1, 1);
+  color: white;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.removeExpense{
+  background-color: rgb(219, 1, 1);
+}
